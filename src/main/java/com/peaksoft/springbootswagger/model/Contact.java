@@ -1,8 +1,16 @@
 package com.peaksoft.springbootswagger.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description = "Details about the contact")
 public class Contact {
+
+    @ApiModelProperty(notes = "The unique id of the contact")
     private String id;
+    @ApiModelProperty(notes = "The person's name")
     private String name;
+    @ApiModelProperty(notes = "The person's phone number")
     private String phone;
 
     public String getId() {
